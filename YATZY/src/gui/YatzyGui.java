@@ -294,6 +294,10 @@ public class YatzyGui extends Application {
         }
     }
 
+    /**
+     * updates fields and checkboxes
+     */
+
     private void updateField(){
         for (CheckBox chbHold : chbHolds) {
             if(chbHold.isSelected()){
@@ -354,6 +358,7 @@ public class YatzyGui extends Application {
         for (int i = 0; i < txfResults.length; i++) {
             if(!txfResults[i].isDisabled()){
                 this.endGame = false;
+                break;
             }else {
                 this.endGame = true;
             }
